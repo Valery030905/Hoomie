@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Hoomie</title>
+        <link rel="icon" href="/imagenes/icono.png" />
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="java.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="contenedor">
+            <img src="imagenes/logo2.png" width="180px">
+            <h1>¡Bienvenido a Hoomie!</h1>
+            <p>Registra tus datos<p>
+                <form action="inicio.html" method="get">
+                    <ul>
+                        <li class="input-container">
+                            <input type="text" class="input-container-input" id="nombre" name="nombre_usuario" required />
+                            <label for="nombre" class="input-container-label">Nombre(s)</label>
+                        </li>
+                
+                        <li class="input-container">
+                            <input type="text" class="input-container-input" id="apellido" name="apellido_usuario" required/>
+                            <label for="apellido" class="input-container-label">Apellidos</label>
+                        </li>
+                
+                        <li class="input-container">
+                            <label for="document" class="input-container-label">Tipo Documento</label>
+                            <select name="documento_usuario" id="document" class="input-container-input" required>
+                                <option value="" hidden disabled selected></option>
+                                <option value="CédulaCiudadania">Cédula de Ciudadanía</option>
+                                <option value="CédulaExtranjeria">Cédula de Extranjería</option>
+                                <option value="TarjetaIdentidad">Tarjeta de Identidad</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                            </select>
+                        </li>
+                
+                        <li class="input-container">
+                            <input type="number" class="input-container-input" id="numDoc" name="numDoc_usuario" required/>
+                            <label for="numDoc" class="input-container-label">Número de documento</label>
+                        </li>
+                
+                        <li class="input-container">
+                            <input type="email" class="input-container-input" id="email" name="email_usuario" required/>
+                            <label for="email" class="input-container-label">Correo Electrónico</label>
+                        </li>  
+                
+                        <li class="input-container">
+                            <input type="number" class="input-container-input" id="phone" name="phone_usuario" required />
+                            <label for="phone" class="input-container-label">Número de Celular</label>
+                        </li>   
+                
+                        <section class="Botones">
+                            <li class="button">
+                                <button type="submit" class="botonAma">Registrarse</button>
+                            </li>   
+                        </section>
+                    </ul>
+                </form>                
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>

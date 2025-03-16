@@ -1,0 +1,106 @@
+body{
+    background-color:#CFEBFD;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+.contenedor{
+    background-color: #ffff;
+    width: 400px;
+    border-radius: 5%;
+    border: solid;
+    border-color: black;
+    padding: 20px;
+    margin: 10px;
+    img{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    h1{
+        text-align: center; 
+    }
+    p{
+        text-align: left;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+    form li + li {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+      
+    label {
+        display: inline-block;
+        width: auto;
+        text-align: right;
+    }
+}
+
+.botonAma{
+    background-color: #FFC875;
+}
+
+.botonAzu{
+    background-color: #CFEBFD; 
+}
+
+.input-container {
+    position: relative;
+    width: 90%;
+    margin-left: 3%;
+}
+
+/* Estilos generales para inputs y selects */
+.input-container-input,
+.input-container select {
+    color: gray;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: 2px solid rgba(128, 128, 128, 0.557);
+    background-color: transparent;
+    transition: outline-color 500ms, transform 500ms;
+    width: 100%;
+    appearance: none;
+    font-size: 20px;
+    left: 12px; 
+}
+
+.input-container-input:focus,
+.input-container select:focus {
+    outline-color: #FFC875;
+}
+
+.input-container-label {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translateY(0%);
+    color: gray;
+    transition: transform 500ms, scale 500ms, background-color 500ms;
+    padding-inline: 5px;
+    width: 80%;
+}
+
+.input-container-input:focus + .input-container-label,
+.input-container-input:valid + .input-container-label,
+.input-container select:focus + .input-container-label,
+.input-container select:valid + .input-container-label {
+    transform: translateY(-30px) scale(0.8);
+    background-color: rgb(255, 255, 255);
+    translate: 0px , -15px; /* Mueve el texto del focus*/
+    scale: 0.8;
+    font-size: 20px;
+    color: #FFC875;
+    left: -10px;
+    padding: 0 5px;
+    
+}
+
