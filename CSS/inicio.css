@@ -21,7 +21,29 @@
     align-items: center;
 }
 
+.botonAma{
+    background-color: #FFC875;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+}
 
+.botonAzu{
+    background-color: #CFEBFD; 
+    color: black;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+}
 
 /* Hero Section */
 .hero {
