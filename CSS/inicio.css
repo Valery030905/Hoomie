@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Fredoka:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.inicio{
+    background-color: white;
+   
+}
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 1px rgb(0, 0, 0);
+    img{
+        width: 220px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.tituloA{
+    font-size: 50PX;
+    color: #FFC875;
+    font-weight: bold;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.tituloN{
+    font-size: 50PX;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #444;
+    margin-right: 40px;
+    margin-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #CFEBFD;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.btn:hover {
+    background-color: #64b5f6;
+}
+
+.hero-logo img {
+    width: 400px;
+    margin-right: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-logo img {
+        width: 200px;
+    }
+}
+
+.opciones{
+    background-color: #CFEBFD;
+    text-align: center;
+}
