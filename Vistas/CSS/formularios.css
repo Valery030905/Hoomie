@@ -138,3 +138,27 @@
 #email:not(:placeholder-shown) + #emailL{
     transform: translate(-15px, -30px) scale(0.8);
 }
+
+.contenedor {
+    width: 55%;
+}
+.input-container-input{
+    font-size: 2.5vw;
+}
+h1{
+    font-size: 5vw;
+}
+.botonAma{
+    font-size: 2vw;
+}
+.botonAzu{
+    font-size: 2vw;
+}
+.ingreso{
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #FFC875;
+}
