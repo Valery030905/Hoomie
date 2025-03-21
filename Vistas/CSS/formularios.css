@@ -10,12 +10,13 @@
 }
 .contenedor{
     background-color: #ffff;
-    width: 400px;
+    max-width: 400px;
     border-radius: 5%;
     border: solid;
     border-color: black;
+    width: 100%;
     padding: 20px;
-    margin: 10px;
+    margin: 50px auto;
     img{
         display: block;
         text-align: center;
@@ -58,7 +59,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    width: 120px;
+    width: 100%;
 }
 
 .botonAzu{
@@ -70,25 +71,13 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    width: 120px;
+    width: 100%;
 }
 .button{
     list-style: none;
     text-align: center;
     display: inline-block;
 }
-.botonAzuRegresa{
-    background-color: #CFEBFD; 
-    color: black;
-    margin-right: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 120px;
-}
-
 
 .input-container {
     position: relative;
@@ -148,8 +137,4 @@
 #email:focus + #emailL,
 #email:not(:placeholder-shown) + #emailL{
     transform: translate(-15px, -30px) scale(0.8);
-}
-
-a{
-    text-decoration: none;
 }
