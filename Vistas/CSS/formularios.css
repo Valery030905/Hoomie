@@ -149,3 +149,10 @@
 #email:not(:placeholder-shown) + #emailL{
     transform: translate(-15px, -30px) scale(0.8);
 }
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 55%;
+    }
+    
+}
