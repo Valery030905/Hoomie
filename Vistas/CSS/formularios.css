@@ -142,6 +142,7 @@
 @media (max-width: 768px) {
     .contenedor {
         width: 80%;
+        background-color: black;
     }
     .input-container-input{
         font-size: 2.5vw;
