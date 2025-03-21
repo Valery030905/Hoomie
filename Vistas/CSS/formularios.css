@@ -10,12 +10,13 @@
 }
 .contenedor{
     background-color: #ffff;
-    width: 400px;
+    max-width: 400px;
     border-radius: 5%;
     border: solid;
     border-color: black;
+    width: 100%;
     padding: 20px;
-    margin: 10px;
+    margin: 50px auto;
     img{
         display: block;
         text-align: center;
@@ -140,7 +141,7 @@
 
 @media (max-width: 768px) {
     .contenedor {
-        width: 55%;
+        width: 80%;
     }
     .input-container-input{
         font-size: 2.5vw;
@@ -154,7 +155,5 @@
     .botonAzu{
         font-size: 2vw;
     }
-    .ingreso{
-        height: 100vh;
-    }
+    
 }
