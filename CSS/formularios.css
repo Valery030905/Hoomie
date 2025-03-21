@@ -73,6 +73,18 @@
     }
 }
 
+.botonAzuRegresa{
+    background-color: #CFEBFD; 
+    color: black;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+}
+
 
 .input-container {
     position: relative;

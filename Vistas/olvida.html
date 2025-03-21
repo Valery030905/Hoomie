@@ -12,30 +12,24 @@
     <body class="ingreso">
         <div class="contenedor">
             <img src="/Hoomie/imagenes/logo2.png" width="180px">
-            <h1>¡Bienvenido Nuevamente!</h1>
-            <p>Identificate para ingresar<p>
+            <h1>¿Olvidaste tu Contraseña?</h1>
+            <p>No te preocupues, recuperarla es muy fácil<p>
                 <form action="inicio.html" method="get">
                     <ul>
                         <li class="input-container">
                             <input type="email" class="input-container-input" id="email" name="email_usuario" placeholder="" required/>
                             <label for="email" class="input-container-label" id="emailL">Correo Electrónico</label>
                         </li>  
-                
-                        <li class="input-container">
-                            <input type="password" class="input-container-input" id="pass" name="pass_usuario" placeholder="" required />
-                            <label for="pass" class="input-container-label" id="passL">Contraseña</label>
-                        </li>
-                        <a href="olvida.html"><p>¿Olvidaste tu Contraseña?</p></a>
+                        <p>Enviaremos un enlace a tu correo electrónico para que puedas recuperrar tu contraseña</p>
                 
                         <section class="Botones">
                             <li class="button">
-                                <button  class="botonAma">Ingresar</button>
-                            </li>      
+                                <button type="submit" class="botonAma">Enviar</button>
+                            </li>   
                         </section>
-
-                        <p>¿No tienes cuenta? <a href="registro.html">Crear Cuenta</a></p>
                     </ul>
-                </form>                
+                </form>
+                <a href="/Hoomie/Vistas/ingreso.html"> <button class="botonAzuRegresa">Regresar</button></a>     
         </div>
     </body>
-</html>
+</html> 
