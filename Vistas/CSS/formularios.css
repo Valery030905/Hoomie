@@ -58,7 +58,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    width: 120px;
+    width: 100%;
 }
 
 .botonAzu{
@@ -70,25 +70,13 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    width: 120px;
+    width: 100%;
 }
 .button{
     list-style: none;
     text-align: center;
     display: inline-block;
 }
-.botonAzuRegresa{
-    background-color: #CFEBFD; 
-    color: black;
-    margin-right: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 120px;
-}
-
 
 .input-container {
     position: relative;
@@ -154,5 +142,19 @@
     .contenedor {
         width: 55%;
     }
-    
+    .input-container-input{
+        font-size: 2.5vw;
+    }
+    h1{
+        font-size: 5vw;
+    }
+    .botonAma{
+        font-size: 2vw;
+    }
+    .botonAzu{
+        font-size: 2vw;
+    }
+    .ingreso{
+        height: 100vh;
+    }
 }
