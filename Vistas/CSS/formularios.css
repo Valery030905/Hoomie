@@ -10,11 +10,10 @@
 }
 .contenedor{
     background-color: #ffff;
-    max-width: 400px;
     border-radius: 5%;
     border: solid;
     border-color: black;
-    width: 100%;
+    width: 400px;
     padding: 20px;
     margin: 50px auto;
     img{
@@ -139,8 +138,16 @@
     transform: translate(-15px, -30px) scale(0.8);
 }
 
-
 a{
     text-decoration: none;
     color: #FFC875;
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 6.45vw;
+    }
+    .contenedor{
+        width: 80%;
+    }
 }
