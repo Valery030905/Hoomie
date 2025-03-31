@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Perfil Hoomie</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagenes/icono.png" />
+        <link rel="stylesheet" href="CSS/formularios.css">
+        <link rel="stylesheet" href="CSS/perfil.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="JS/java.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="imagenes/principal.png">
+            </div>
+            <div class="buttons">
+                <a href="ingreso.html"><button class="botonAzu">Ingresar</button></a>
+                <a href="registro.html"><button class="botonAma">Registrarse</button></a>
+            </div>
+        </nav>
+        <div class="base1">
+            <div class="contenedor" id="datos">
+                <p>Información personal<p>
+                    <form action="inicio.html" method="get">
+                        <ul>
+                            <li class="input-container">
+                                <input type="text" class="input-container-input" id="nombre" name="nombre_usuario" placeholder="" required />
+                                <label for="nombre" class="input-container-label">Nombre(s)</label>
+                            </li>
+                    
+                            <li class="input-container">
+                                <input type="text" class="input-container-input" id="apellido" name="apellido_usuario" placeholder="" required/>
+                                <label for="apellido" class="input-container-label">Apellidos</label>
+                            </li>
+                    
+                            <li class="input-container">
+                                <input type="number" class="input-container-input" id="phone" name="phone_usuario" placeholder="" required />
+                                <label for="phone" class="input-container-label" id="phoneL">Número de Celular</label>
+                            </li>   
+    
+                            <li class="input-container">
+                                <input type="email" class="input-container-input" id="email" name="email_usuario" placeholder="" required/>
+                                <label for="email" class="input-container-label" id="emailL">Correo Electrónico</label>
+                            </li>  
+    
+                            <li class="input-container">
+                                <input type="password" class="input-container-input" id="contraseña" name="contraseña_usuario" placeholder="" required/>
+                                <label for="contraseña" class="input-container-label" id="contraseñaL">Contraseña</label>
+                            </li> 
+                    
+                            <section class="Botones">
+                                <li class="button">
+                                    <button onclick="window.history.back()" class="botonAzu">Regresar</button></a>  
+                                </li>
+    
+                                <li class="button">
+                                    <button type="submit" class="botonAma">Registrarse</button>
+                                </li>   
+                            </section>
+                        </ul>
+                    </form>              
+            </div>
+            <img src="imagenes/logo2.png" alt="">  
+            </div>
+        </div>
+    </body>
+</html>

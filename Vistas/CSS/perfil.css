@@ -1,0 +1,31 @@
+body{
+    margin:0%;
+    background-color: aqua;
+    padding: 0%;
+}
+.base1{
+    background-color: #CFEBFD;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 1px rgb(0, 0, 0);
+    img{
+        width: 220px;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#datos{
+    margin: 20px 20px 20px 15%;
+}
