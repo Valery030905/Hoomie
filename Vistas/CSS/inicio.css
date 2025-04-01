@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Fredoka:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .inicio{
     background-color: white;
     margin: 0%;
@@ -156,7 +160,7 @@
 }
 
 .opcion img {
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
 }
@@ -169,4 +173,122 @@
 }
 a{
     text-decoration: none;
+}
+
+.reviews{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; 
+    height: 350px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 5px;
+    flex: 0 0 33.33%; /* Hace que cada tarjeta ocupe el 33.33% del contenedor */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Hacer las imágenes redondas */
+    margin-bottom: 15px; /* Espacio inferior */
+    border: 3px solid #fff; /* Borde blanco alrededor de la imagen */
+}
+
+.carousel-item .user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.carousel-item .user-profession {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.carousel-item .message-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+    height: 40px; /* Tamaño de los botones */
+    width: 40px; /* Tamaño de los botones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev {
+    left: 30px; /* Coloca el botón a la izquierda fuera del carrusel */
+}
+
+.next {
+    right: 30px; /* Coloca el botón a la derecha fuera del carrusel */
+}
+
+.star-rating {
+    margin-top:10px ;
+    display: flex; /* Alineación de las estrellas en línea */
+    gap: 5px; /* Espacio entre las estrellas */
+    justify-content: center; /* Centra las estrellas */
+    margin-bottom: 10px; /* Espacio entre las estrellas y el botón de mensaje */
+}
+
+.star-rating i {
+    font-size: 20px; /* Tamaño de las estrellas */
+    color: #FFD700; /* Color de las estrellas amarillas */
+}
+
+.star-rating .fa-regular {
+    color: #e0e0e0; /* Color de las estrellas vacías (gris claro) */
 }
