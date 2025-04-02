@@ -78,6 +78,8 @@
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .hero p {
@@ -175,13 +177,14 @@ a{
     text-decoration: none;
 }
 
+/* Sección Carrusel */
 .reviews{
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    height: 100vh;  
+    background-color: #ffffff;
     margin: 0;
     width: 100%;
     padding: 5px;
@@ -214,7 +217,7 @@ a{
     border-radius: 10px;
     padding: 20px;
     margin: 0 5px;
-    flex: 0 0 33.33%; /* Hace que cada tarjeta ocupe el 33.33% del contenedor */
+    flex: 0 0 33.33%; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -225,9 +228,9 @@ a{
 .carousel-item img {
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* Hacer las imágenes redondas */
-    margin-bottom: 15px; /* Espacio inferior */
-    border: 3px solid #fff; /* Borde blanco alrededor de la imagen */
+    border-radius: 50%;
+    margin-bottom: 15px; 
+    border: 3px solid #000000; 
 }
 
 .carousel-item .user-name {
@@ -235,18 +238,12 @@ a{
     font-weight: bold;
 }
 
-.carousel-item .user-profession {
-    color: #777;
+.carousel-item .descri {
+    color: #a5a5a5;
+    margin-top: 5px;
     margin-bottom: 20px;
-}
-
-.carousel-item .message-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .carousel-btn {
@@ -261,34 +258,34 @@ a{
     transform: translateY(-50%);
     cursor: pointer;
     z-index: 2;
-    height: 40px; /* Tamaño de los botones */
-    width: 40px; /* Tamaño de los botones */
+    height: 40px; 
+    width: 40px; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .prev {
-    left: 30px; /* Coloca el botón a la izquierda fuera del carrusel */
+    left: 30px; 
 }
 
 .next {
-    right: 30px; /* Coloca el botón a la derecha fuera del carrusel */
+    right: 30px; 
 }
 
 .star-rating {
     margin-top:10px ;
-    display: flex; /* Alineación de las estrellas en línea */
-    gap: 5px; /* Espacio entre las estrellas */
-    justify-content: center; /* Centra las estrellas */
-    margin-bottom: 10px; /* Espacio entre las estrellas y el botón de mensaje */
+    display: flex; 
+    gap: 5px;
+    justify-content: center; 
+    margin-bottom: 10px;
 }
 
 .star-rating i {
-    font-size: 20px; /* Tamaño de las estrellas */
-    color: #FFD700; /* Color de las estrellas amarillas */
+    font-size: 20px; 
+    color: #FFD700; 
 }
 
 .star-rating .fa-regular {
-    color: #e0e0e0; /* Color de las estrellas vacías (gris claro) */
+    color: #e0e0e0;
 }
