@@ -33,12 +33,57 @@
         <div class="publica-texto">
             <h1>Publica tu espacio en minutos, encuentra tu match de inquilino.</h1>
             <p>¡Así de fácil!</p>
-            <a href="publicar.html" class="botonAzu">Empezar mi publicación <i class="fa-solid fa-arrow-right"> </i></a>
+            <button id="openModalBtn" class="botonAzu">Empezar mi publicación <i class="fa-solid fa-arrow-right"></i></button>  
         </div>
         <div class="publica-ilustracion">
             <img src="imagenes/public.png" />
         </div>
     </section>
+
+    <!-- Modal del formulario -->
+    <div class="modal" id="formModal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+    
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    
+        <form id="multiStepForm">
+            <!-- Paso 1 -->
+            <div class="form-step active">
+            <h2>¡Inicia tu proceso de publicación!</h2>
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+            <div class="buttons">
+                <a href="publica_apto.html"><button type="button" class="cancel" >Cancelar</button></a>
+                <button type="button" class="next" disabled>Siguiente</button>
+            </div>
+            </div>
+    
+            <!-- Paso 2 -->
+            <div class="form-step">
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            <div class="buttons">
+                <button type="button" class="back">Volver</button>
+                <button type="button" class="next" disabled>Siguiente</button>
+            </div>
+            </div>
+    
+            <!-- Paso 3 -->
+            <div class="form-step">
+            <label>Mensaje:</label>
+            <textarea id="mensaje" required></textarea>
+            <div class="buttons">
+                <button type="button" class="back">Volver</button>
+                <button type="submit">Enviar</button>
+            </div>
+            </div>
+        </form>
+        </div>
+    </div>
+  
   
       
 </body>
