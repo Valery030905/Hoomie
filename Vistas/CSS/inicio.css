@@ -13,6 +13,15 @@ html {
     margin: 0%;
 }
 .navbar {
+    position: fixed;     /* Se queda fijo al hacer scroll */
+    top: 0;              /* Lo posiciona al tope */
+    left: 0;
+    width: 98%;         /* Ocupa todo el ancho */
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -55,6 +64,7 @@ html {
 
 /* Hero Section */
 .hero {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,6 +304,55 @@ a{
 .star-rating .fa-regular {
     color: #e0e0e0;
 }
+
+.ciudades-container {
+    display: flex;
+    justify-content: center; 
+    gap: 40px;               
+    flex-wrap: wrap;        
+    padding: 40px;
+  }  
+
+.ciudad-card {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .ciudad-card:hover {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  .imagen-container {
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .ciudad-card:hover .imagen-container img {
+    transform: scale(1.1);
+  }
+  
+  .ciudad-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
 
 .footer {
     background-color: #f0f0f0;

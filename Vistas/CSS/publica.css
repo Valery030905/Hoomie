@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Fredoka:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+nav{
+    position: fixed;     /* Se queda fijo al hacer scroll */
+      top: 0;              /* Lo posiciona al tope */
+      left: 0;
+      width: 98%;         /* Ocupa todo el ancho */
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+}
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 1px rgb(0, 0, 0);
+    img{
+        width: 220px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.botonAma{
+    background-color: #FFC875;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+}
+
+.botonAzu{
+    background-color: #CFEBFD; 
+    color: black;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    text-decoration: none;
+}
+
+/* Anuncio */
+
+.anuncio-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+.anuncio-banner {
+    background-color: #fff4d6;
+    padding: 15px 20px;
+    position: fixed;
+    top: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.6s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .anuncio-banner.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .anuncio-banner a {
+    font-weight: bold;
+    color: #0077ff;
+    text-decoration: none;
+  }
+  
+  .anuncio-banner a:hover {
+    text-decoration: underline;
+  }
+  
+  .cerrar-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Banner */
+  .publica-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .publica-texto {
+    max-width: 500px;
+    
+  }
+  .publica-texto h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: bold;
+    font-family: "Fredoka", sans-serif;
+  }
+  
+  .publica-texto p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .publica-ilustracion img {
+    max-width: 500px;
+    width: 100%;
+  }
+  

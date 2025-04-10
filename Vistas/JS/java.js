@@ -21,3 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('nextBtn').addEventListener('click', () => moveCarousel('next'));
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+    const anuncio = document.getElementById("anuncio");
+    setTimeout(() => {
+      anuncio.classList.add("mostrar");
+    }, 800);
+  });
+
+  function cerrarAnuncio() {
+    const anuncio = document.getElementById("anuncio");
+    anuncio.classList.remove("mostrar");
+}
+
